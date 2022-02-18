@@ -173,19 +173,28 @@ body {
   box-shadow: black -2px 4px;
   border: solid black 1px;
 }
-.github{
-  height: 30px;
-  width: auto;
-  transition: transform 400ms ease-in-out;
+.animate{
+  color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1000ms ease-in-out, color 1s;
+  margin-left: 180px;
 }
-.github:hover{
-  transform:scale(1.4) rotate3d(0, 1, 0, 360deg);
- 
+.animate:hover{
+  color: black;
+  transform:scale(1.1) rotate3d(0, 1, 0, 360deg) translateX(-80px);
+  transition: transform 900ms ease-in-out, color 2s;
 }
 
-#hypertext{
-  font-size: 30px;
-  appearance: none;
+.github{
+  height: 25px;
+  width: auto;
+}
+.github:hover{
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+a{
   text-decoration: none;
   color: inherit;
 }
