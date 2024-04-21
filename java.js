@@ -107,7 +107,7 @@ function modifyCurrentOperator(operator) {
 
 }
 function keyboardInput(e) {
-  if (e.key >= 0 && e.key <= 9) modifyCurrentValue(e.key);
+  if (e.key >= '0' && e.key <= '9') modifyCurrentValue(e.key);
   if (e.key === '=') modifyCurrentOperator(e.key);
   if (e.key === 'Escape') resetCalculator();
   if (e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/'){
